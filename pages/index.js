@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Container from '../components/Container'
 import { Link, Code, Box } from '@chakra-ui/layout'
+import Hero from '../components/Hero'
 import {
   useColorMode,
   Heading,
@@ -37,12 +38,7 @@ export default function Index() {
           alignItems="flex-start"
           maxWidth="700px"
         >
-          <Heading mb={2}>
-            Hey, I'm Victor
-          </Heading>
-          <Text color={colorSecondary[colorMode]}>
-            How are you?
-          </Text>
+          <Hero />
         </Flex>
       </Stack>
     </Container>
