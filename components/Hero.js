@@ -9,7 +9,7 @@ import {
   ListItem,
   UnorderedList, 
 } from '@chakra-ui/react';
-
+import NextLink from 'next/link'
 
 export default function SplitScreen() {
   let ngURL = "https://www.northropgrumman.com/";
@@ -56,14 +56,17 @@ export default function SplitScreen() {
               }}>
               About Victor
             </Button>
-            <Button rounded={'full'}>View Portfoilo</Button>
+            <NextLink href="/portfoilo" passHref>
+              <Button rounded={'full'}>View Portfoilo</Button>
+            </NextLink>
           </Stack>
         </Stack>
       </Flex>
       <Flex p={8} flex={1} align={'center'} justify={'center'}>
         <Image
           alt={'Login Image'}
-          height= {'25em'}
+          height= {'27em'}
+          width={'100%'}
           objectFit={'cover'}
           src={
             '/butterfly.jpg'

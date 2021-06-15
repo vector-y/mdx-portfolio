@@ -17,7 +17,6 @@ const BlogPost = ({ title, publishedAt, summary, slug }) => {
                 mb={10} 
                 display="block" 
                 width="100%" 
-                // bg={'red.400'}
                 maxW={'500px'}
                 w={'full'}
                 bg={useColorModeValue('white', 'gray.800')}
