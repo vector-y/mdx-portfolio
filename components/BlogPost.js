@@ -26,7 +26,7 @@ const BlogPost = ({ title, publishedAt, summary, slug }) => {
                 mt={8}
                 rounded={'md'}
                 _hover={{
-                transform: 'translateY(-2px)',
+                transform: 'translateY(-1px)',
                 boxShadow: 'lg',
                 }}
                 >
@@ -34,7 +34,7 @@ const BlogPost = ({ title, publishedAt, summary, slug }) => {
                         h={'120px'}
                         w={'full'}
                         src={
-                        'https://images.unsplash.com/photo-1612865547334-09cb8cb455da?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
+                        'https://pbs.twimg.com/media/E1Dic6qXoAAG-jy?format=jpg&name=large'
                         }
                         objectFit={'cover'}
                     />

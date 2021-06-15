@@ -56,9 +56,9 @@ export default function BlogLayout({ children, frontMatter }) {
                     >
                         <Flex align="center">
                             <Avatar
-                                size="md"
+                                size="sm"
                                 name="Victor Tran"
-                                src="/victor.jpg"
+                                src="/butterfly.jpg"
                                 mr={2}
                             />
                             <Text fontSize="sm" color={textColor[colorMode]}>

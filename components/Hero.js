@@ -65,8 +65,7 @@ export default function SplitScreen() {
       <Flex p={8} flex={1} align={'center'} justify={'center'}>
         <Image
           alt={'Login Image'}
-          height= {'27em'}
-          width={'100%'}
+          height= {'30em'}
           objectFit={'cover'}
           src={
             '/butterfly.jpg'
