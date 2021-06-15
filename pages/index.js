@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import Container from '../components/Container'
 import { Link, Code, Box } from '@chakra-ui/layout'
 import Hero from '../components/Hero'
+import Grid from '../components/Grid.tsx'
 import {
   useColorMode,
   Heading,
@@ -39,6 +40,7 @@ export default function Index() {
           maxWidth="700px"
         >
           <Hero />
+          <Grid />
         </Flex>
       </Stack>
     </Container>
