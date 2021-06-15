@@ -59,9 +59,9 @@ const Container = ({ children }) => {
                             Home
                         </Button>
                     </NextLink>
-                    <NextLink href="/portfoilo" passHref>
+                    <NextLink href="/portfolio" passHref>
                         <Button as="a" variant="ghost" p={[1, 2, 4]}>
-                            Portfoilo
+                            Portfolio
                         </Button>
                     </NextLink>
                 </Box>

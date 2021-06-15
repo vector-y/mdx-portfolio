@@ -56,8 +56,8 @@ export default function SplitScreen() {
               }}>
               About Victor
             </Button>
-            <NextLink href="/portfoilo" passHref>
-              <Button rounded={'full'}>View Portfoilo</Button>
+            <NextLink href="/portfolio" passHref>
+              <Button rounded={'full'}>View Portfolio</Button>
             </NextLink>
           </Stack>
         </Stack>

@@ -28,7 +28,7 @@ export default function Blog({ posts }) {
     return (
         <>
             <Head>
-                <title>Blog | Victor</title>
+                <title>Portfolio | Victor</title>
             </Head>
             <Container>
                 <Stack
@@ -47,7 +47,7 @@ export default function Blog({ posts }) {
                         px={4}
                     >
                         <Heading letterSpacing="tight" mb={4} as="h1" size="2xl">
-                            Portfoilo ({posts.length} items)
+                            Portfolio ({posts.length} items)
                         </Heading>
                         <InputGroup mb={4} mr={4} w="100%">
                             <Input
@@ -69,7 +69,7 @@ export default function Blog({ posts }) {
 }
 
 export async function getStaticProps() {
-    const posts = await getAllFilesFrontMatter('blog')
+    const posts = await getAllFilesFrontMatter('portfolio')
 
     return { props: { posts } }
 }
