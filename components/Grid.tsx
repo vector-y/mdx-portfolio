@@ -33,7 +33,8 @@ export default function SimpleThreeColumns() {
     <Box p={4}>
       <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
         <Text 
-          mt={5} 
+          mt={5}
+          ml={2}
           mb={5}
         >
             Currently <Text color={'red.400'} as={'span'}>Exploring</Text>{' '}
@@ -42,7 +43,7 @@ export default function SimpleThreeColumns() {
       <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
         <Feature
           icon={<Icon as={FcCommandLine} w={10} h={10} />}
-          title={'Learning Web Development'}
+          title={'Learning node.js'}
           text={
             'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
           }
