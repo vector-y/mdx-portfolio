@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
+import Footer from  '../components/Footer.tsx'
 import {
     Heading,
     Flex,
@@ -63,6 +64,7 @@ export default function Blog({ posts }) {
                         {filteredBlogPosts.map((frontMatter) => <BlogPost key={frontMatter.title} {...frontMatter} />)}
                     </Flex>
                 </Stack>
+                <Footer />
             </Container>
         </>
     )

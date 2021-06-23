@@ -45,7 +45,7 @@ import {
     return (
       <Box
         paddingTop={'10%'}
-        bg={useColorModeValue('white', 'gray.900')}
+        bg={useColorModeValue('white', 'dark')}
         color={useColorModeValue('gray.700', 'gray.200')}>
         <Container
           as={Stack}
