@@ -37,32 +37,31 @@ export default function SplitScreen() {
             <br />{' '}
           </Heading>
           <UnorderedList
-            fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}
+            fontSize={{ base: 'md', lg: 'lg' }}
           >
             <ListItem>Studying Computer Science @ Long Beach State</ListItem>
             <ListItem>Previously @ <a style={{color: "#F56565", textDecoration: 'none'}} href={ngURL}>Northrop Grumman</a> <br/></ListItem>
             <ListItem>Previously @ <a style={{color: "#F56565", textDecoration: 'none'}} href={spaceURL}>urspace Labs</a> <br/></ListItem>
           </UnorderedList>
-          {/* <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
-           Victor is a UX Engineer based in LA. He enjoys Arizona Tea, running, and watching k-dramas.
-          </Text> */}
           <Stack direction={{ base: 'column', md: 'row' }} spacing={5}>
-            <Button
-              rounded={'full'}
-              bg={'red.400'}
-              color={'white'}
-              _hover={{
-                bg: 'red.500',
-              }}>
-              About Victor
-            </Button>
+            <NextLink href="/about" passHref>
+              <Button
+                rounded={'full'}
+                bg={'red.400'}
+                color={'white'}
+                _hover={{
+                  bg: 'red.500',
+                }}>
+                About Victor
+              </Button>
+            </NextLink>
             <NextLink href="/portfolio" passHref>
               <Button rounded={'full'}>View Portfolio</Button>
             </NextLink>
           </Stack>
         </Stack>
       </Flex>
-      <Flex p={8} flex={1} align={'center'} justify={'center'}>
+      <Flex p={1} flex={1} align={'center'} justify={'center'}>
         <Image
           alt={'Login Image'}
           height= {'30em'}

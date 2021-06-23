@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Container from '../components/Container'
 import { Link, Code, Box } from '@chakra-ui/layout'
-import Hero from '../components/Hero'
+import AboutHero from '../components/AboutHero'
 import Grid from '../components/Grid.tsx'
 import Footer from  '../components/Footer.tsx'
 import {
@@ -23,7 +23,7 @@ export default function Index() {
   return (
     <Container>
       <Head>
-        <title> Home | Victor Tran </title>
+        <title> About | Victor Tran </title>
       </Head>
       <Stack
          as="main"
@@ -40,7 +40,7 @@ export default function Index() {
           alignItems="flex-start"
           maxWidth="700px"
         >
-          <Hero />
+          <AboutHero />
         </Flex>
       </Stack>
       <Footer />
