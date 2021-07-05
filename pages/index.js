@@ -6,6 +6,7 @@ import { Link, Code, Box } from '@chakra-ui/layout'
 import Hero from '../components/Hero'
 import Grid from '../components/Grid.tsx'
 import Footer from  '../components/Footer.tsx'
+
 import {
   useColorMode,
   Heading,

@@ -34,7 +34,6 @@ export default function SimpleThreeColumns() {
       <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
         <Text 
           mt={5}
-          ml={2}
           mb={5}
         >
             Currently <Text color={'red.400'} as={'span'}>Exploring</Text>{' '}
