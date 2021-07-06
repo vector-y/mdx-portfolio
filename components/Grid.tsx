@@ -39,26 +39,26 @@ export default function SimpleThreeColumns() {
             Currently <Text color={'red.400'} as={'span'}>Exploring</Text>{' '}
         </Text>
       </Heading>
-      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+      <SimpleGrid alignItems={"center"} columns={{ base: 1, md: 3 }} spacing={10}>
         <Feature
           icon={<Icon as={FcCommandLine} w={10} h={10} />}
           title={'Learning node.js'}
           text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+            'Learning more about next.js, chakra-ui, and markdown! Always open to chat more about web development :)'
           }
         />
         <Feature
           icon={<Icon as={FcDonate} w={10} h={10} />}
           title={'Giving Back'}
           text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+            'Looking to donate time to learn how to contribute back to my community through design and technology!'
           }
         />
         <Feature
           icon={<Icon as={FcConferenceCall} w={10} h={10} />}
           title={'Finding Community'}
           text={
-            'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
+            'Learning more about the design community on Twitter and doing my best to make new friends <3'
           }
         />
       </SimpleGrid>

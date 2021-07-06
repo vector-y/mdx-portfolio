@@ -7,6 +7,8 @@ import Hero from '../components/Hero'
 import Grid from '../components/Grid.tsx'
 import Footer from  '../components/Footer.tsx'
 
+import PortfolioList from  '../components/PortfolioList.tsx'
+
 import {
   useColorMode,
   Heading,
@@ -43,6 +45,7 @@ export default function Index() {
         >
           <Hero />
           <Grid />
+          <PortfolioList />
         </Flex>
       </Stack>
       <Footer />
