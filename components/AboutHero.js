@@ -93,7 +93,7 @@ import {
             flexDirection="column"
             justifyContent="center"
             marginTop={{ base: '3', sm: '0' }}>
-              <Heading as="h1">What I'm Listening To</Heading>
+              <Heading as="h1" textAlign={"center"}>Listening To:</Heading>
               <iframe src="https://open.spotify.com/embed/playlist/7xez5ktOS8kgr2PJwMBM8L" position="center" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" />
             </Box>
           </Stack>

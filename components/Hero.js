@@ -32,7 +32,7 @@ export default function SplitScreen() {
                 bg: 'red.400',
                 zIndex: -1,
               }}>
-              Victor is a <Text color={'red.400'} as={'span'}>UX Engineer</Text>{' '} based in <Text color={'red.400'} as={'span'}>Los Angeles</Text>{' '}
+              Victor is a <Text color={'red.400'} as={'span'}>UX Engineer</Text>{' '} based in <br /> <Text color={'red.400'} as={'span'}>Los Angeles</Text>{' '}
             </Text>
             <br />{' '}
           </Heading>

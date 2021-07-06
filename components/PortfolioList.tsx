@@ -126,7 +126,7 @@ const ArticleList = () => {
                     </NextLink>
                 </Link>
             </Heading>
-            <BlogTags tags={['Engineering', 'Web App', 'Senior Project']} />
+            <BlogTags tags={['Engineering', 'Website', 'Design']} />
             <Text
                 as="p"
                 marginTop="2"
