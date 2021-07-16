@@ -44,7 +44,7 @@ export default function Index() {
           maxWidth="700px"
         >
           <Hero />
-          <Grid />
+          <Grid />  
           <PortfolioList />
         </Flex>
       </Stack>
