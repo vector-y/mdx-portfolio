@@ -20,7 +20,7 @@ const BlogPost = ({ title, publishedAt, summary, slug }) => {
                 maxW={'500px'}
                 w={'full'}
                 bg={useColorModeValue('white', 'gray.800')}
-                boxShadow={'2xl'}
+                // boxShadow={'2xl'}
                 rounded={'md'}
                 overflow={'hidden'}
                 mt={8}
@@ -30,14 +30,14 @@ const BlogPost = ({ title, publishedAt, summary, slug }) => {
                 boxShadow: 'lg',
                 }}
                 >
-                    <Image
+                    {/* <Image
                         h={'120px'}
                         w={'full'}
                         src={
                         'https://pbs.twimg.com/media/E1Dic6qXoAAG-jy?format=jpg&name=large'
                         }
                         objectFit={'cover'}
-                    />
+                    /> */}
                     <Flex
                         width="100%"
                         align="flex-start"

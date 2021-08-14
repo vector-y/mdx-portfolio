@@ -32,7 +32,7 @@ export default function SplitScreen() {
                 bg: 'red.400',
                 zIndex: -1,
               }}>
-              Victor is a <Text color={'red.400'} as={'span'}>UX Engineer</Text>{' '} based in <br /> <Text color={'red.400'} as={'span'}>Los Angeles</Text>{' '}
+              Victor is a <Text color={'red.400'} as={'span'}>UX Engineer</Text>{' '} based in <Text color={'red.400'} as={'span'}>OC</Text>{' '}
             </Text>
             <br />{' '}
           </Heading>
@@ -63,7 +63,7 @@ export default function SplitScreen() {
       </Flex>
       <Flex p={1} flex={1} align={'center'} justify={'center'}>
         <Image
-          alt={'Login Image'}
+          alt={'Victor Profile Image'}
           height= {'30em'}
           objectFit={'cover'}
           src={

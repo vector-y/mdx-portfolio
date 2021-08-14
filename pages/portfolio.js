@@ -29,7 +29,7 @@ export default function Blog({ posts }) {
     return (
         <>
             <Head>
-                <title>Portfolio | Victor</title>
+                <title>Portfolio | Victor Tran</title>
             </Head>
             <Container>
                 <Stack

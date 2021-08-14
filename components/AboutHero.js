@@ -9,16 +9,18 @@ import {
     ListItem,
     UnorderedList, 
     Box,
+    Icon,
   } from '@chakra-ui/react';
   import NextLink from 'next/link'
   
   export default function SplitScreen() {
-    let ngURL = "https://www.northropgrumman.com/";
-    let spaceURL = "https://labs.urspace.io/";
+    let linkedURL = "https://www.linkedin.com/in/tran-victor/";
+    let mailURL = "vt.victortran@gmail.com";
+    let twitterURL = "https://twitter.com/vectori";
     return (
       <Stack minH={'50vh'} direction={{ base: 'column', md: 'row' }}>
-        <Flex p={8} flex={1} justify={'center'}>
-          <Stack spacing={6} w={'full'} maxW={'5xl'}>
+        <Flex p={12} flex={1} justify={'center'}>
+          <Stack spacing={5} w={'full'} maxW={'5xl'}>
             <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
               <Text
                 as={'span'}
@@ -38,14 +40,39 @@ import {
               <br />{' '}
             </Heading>
             
-            <Text fontSize={{ base: '3xl', md: '3xl', lg: '3xl' }}>
-                Currently a senior, implementing designs to improve quality of life for all people to live easier lives.  
+            <Text fontSize={{ base: '2xl', md: '2xl', lg: '2xl' }}>
+                Hi there! <br/> I'm Victor, a UX Engineer based in Orange County. <br/> I'm learning about how I can design to improve quality of life for all people to live life to the fullest :)  
             </Text>
 
             <p>
-              I grew up in small-town Iowa and went to school at Iowa State, graduating with a degree in Computer Engineering. I spend my free time playing music, creating videos, and enjoying time with friends and family in Des Moines, IA.
+            I'm a recent new grad (c/o 2021) who majored in Computer Science at California State Long Beach (CSULB). I'm finishing up one last course this fall, looking to break into the user experience engineering space shortly after. 
+            <br/>
+            <br/>
+            I plan on finishing up a UI / UX Design Specialization course offered by Cal Arts and finding my own space in pro bono design work before working full-time! In the past, I have worked as an engineering fellow at urspace labs, created internal tools at Northrop Grumman, and led the Society of Asian Scientists and Engineers as President at CSULB.
+            <br/>
+            <br/>
+            When I'm not learning more about design, I usually go on a run, play a video game, and/or finding new inspiration in art and music everywhere.
             </p>
-
+            <br/>
+            <Stack direction={{ base: 'column' }} spacing={10}>
+              <Stack direction={{ base: 'column', md: 'row' }} spacing={9}>
+                <Heading as="h1" textAlign={"center"}>Photo of me</Heading>
+                  <Image
+                    alt={'Victor Profile Image'}
+                    height= {'25em'}
+                    objectFit={'cover'}
+                    src={
+                      '/butterfly.jpg'
+                    }
+                  />
+              </Stack>
+              <Stack direction={{ base: 'column', md: 'row'}} spacing={5}>
+                <Heading as="h1" textAlign={"center"}>Listening To:</Heading>
+                  <p align="center">
+                    <iframe src="https://open.spotify.com/embed/playlist/7xez5ktOS8kgr2PJwMBM8L" align= "center" position="center" width="300" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media" />
+                  </p>
+              </Stack>
+            </Stack>
             <Stack direction={{ base: 'column', md: 'row' }} spacing={10}>
                 <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
                 <Text
@@ -69,34 +96,12 @@ import {
             <UnorderedList
                 fontSize={{ base: 'md', lg: 'lg' }}
             > 
-                <ListItem>vt.victortran@gmail.com</ListItem>
-                <ListItem>Previously @ <a style={{color: "#F56565", textDecoration: 'none'}} href={ngURL}>Northrop Grumman</a> <br/></ListItem>
-                <ListItem>Previously @ <a style={{color: "#F56565", textDecoration: 'none'}} href={spaceURL}>urspace Labs</a> <br/></ListItem>
+                <ListItem>DM me on <a style={{color: "#F56565", textDecoration: 'none'}} href={twitterURL}>Twitter</a> <br/></ListItem>
+                <ListItem>Connect with me on <a style={{color: "#F56565", textDecoration: 'none'}} href={linkedURL}>LinkedIn</a> <br/></ListItem>
+                <ListItem>Reach out: <a style={{color: "#F56565", textDecoration: 'none'}}>vt.victortran@gmail.com</a></ListItem>
             </UnorderedList>
           </Stack>
-        </Flex>
-
         
-        <Flex p={0} flex={1} align={'right'} justify={'right'}>
-          <Stack direction={{ base: 'column'}} spacing={10}>
-            <Image
-              alt={'Login Image'}
-              height= {'30em'}
-              objectFit={'cover'}
-              src={
-                '/butterfly.jpg'
-              }
-            />
-            <Box
-            display="flex"
-            flex="1"
-            flexDirection="column"
-            justifyContent="center"
-            marginTop={{ base: '3', sm: '0' }}>
-              <Heading as="h1" textAlign={"center"}>Listening To:</Heading>
-              <iframe src="https://open.spotify.com/embed/playlist/7xez5ktOS8kgr2PJwMBM8L" position="center" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" />
-            </Box>
-          </Stack>
         </Flex>
       </Stack>
     );

@@ -89,7 +89,7 @@ const ArticleList = () => {
                 marginLeft={{ base: '0', sm: '5%' }}
                 marginTop="5%">
                 <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                    <NextLink href="/portfolio" passHref>
+                    <NextLink href="/portfolio/ikigai" passHref>
                             <Image
                             alt={'ikigai'}
                             borderRadius="lg"
@@ -121,7 +121,7 @@ const ArticleList = () => {
             marginTop={{ base: '3', sm: '0' }}>
             <Heading marginTop="1" marginBottom="2">
                 <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                    <NextLink href="/portfolio" passHref>
+                    <NextLink href="/portfolio/ikigai" passHref>
                         ikigai
                     </NextLink>
                 </Link>
@@ -132,7 +132,7 @@ const ArticleList = () => {
                 marginTop="2"
                 color={useColorModeValue('gray.700', 'gray.200')}
                 fontSize="lg">
-                ikigai is a prototyped web application which combines e-commerce and sustainability (since thrifting helps combat fast fashion). The idea is for us to look at your clothing purchase history to make selling and sharing your fashion a more social and seamless experience.
+                ikigai is a prototyped web application which combines e-commerce and sustainability (enables thrifting to combat fast fashion).
             </Text>
             </Box>
         </Box>
@@ -156,9 +156,9 @@ const ArticleList = () => {
                 marginLeft={{ base: '0', sm: '5%' }}
                 marginTop="5%">
                 <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                    <NextLink href={coingoURL} passHref>
+                    <NextLink href={"/portfolio/coingo"} passHref>
                         <Image
-                        alt={'ikigai'}
+                        alt={'coingo'}
                         borderRadius="lg"
                         objectFit={'contain'}
                         src={
@@ -188,7 +188,7 @@ const ArticleList = () => {
             marginTop={{ base: '3', sm: '0' }}>
             <Heading marginTop="1" marginBottom="2">
                 <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                    <NextLink href={coingoURL} passHref>
+                    <NextLink href={"/portfolio/coingo"} passHref>
                         coingo
                     </NextLink>
                 </Link>
@@ -222,7 +222,7 @@ const ArticleList = () => {
                 marginLeft={{ base: '0', sm: '5%' }}
                 marginTop="5%">
                 <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                    <NextLink href="/portfolio" passHref>
+                    <NextLink href="/portfolio/northrop-grumman" passHref>
                         <Image
                         alt={'northrop grumman'}
                         borderRadius="lg"
@@ -254,7 +254,7 @@ const ArticleList = () => {
             marginTop={{ base: '3', sm: '0' }}>
             <Heading marginTop="1" marginBottom="2">
                 <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                    <NextLink href="/portfolio" passHref>
+                    <NextLink href="/portfolio/northrop-grumman" passHref>
                         Northrop Grumman
                     </NextLink>
                 </Link>
