@@ -51,7 +51,7 @@ import {
             I plan on finishing up a UI / UX Design Specialization course offered by Cal Arts and finding my own space in pro bono design work before working full-time! In the past, I have worked as an engineering fellow at urspace labs, created internal tools at Northrop Grumman, and led the Society of Asian Scientists and Engineers as President at CSULB.
             <br/>
             <br/>
-            When I'm not learning more about design, I usually go on a run, play a video game, and/or finding new inspiration in art and music everywhere.
+            When I'm not learning more about design, I usually go on a run, play a video game, and/or find new inspiration in art and music everywhere.
             </p>
             <br/>
             <Stack direction={{ base: 'column' }} spacing={10}>

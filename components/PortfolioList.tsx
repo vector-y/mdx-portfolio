@@ -125,6 +125,13 @@ const ArticleList = () => {
                         ikigai
                     </NextLink>
                 </Link>
+                <Text
+                as="p"
+                marginTop="2"
+                color={useColorModeValue('gray.700', 'gray.200')}
+                fontSize="lg">
+                August 2020 - May 2021
+                </Text>
             </Heading>
             <BlogTags tags={['Engineering', 'Website', 'Design']} />
             <Text
@@ -132,7 +139,7 @@ const ArticleList = () => {
                 marginTop="2"
                 color={useColorModeValue('gray.700', 'gray.200')}
                 fontSize="lg">
-                ikigai is a prototyped web application which combines e-commerce and sustainability (enables thrifting to combat fast fashion).
+                ikigai is a MVP web application which combines e-commerce and sustainability (enables thrifting to combat fast fashion).
             </Text>
             </Box>
         </Box>
@@ -192,6 +199,13 @@ const ArticleList = () => {
                         coingo
                     </NextLink>
                 </Link>
+                <Text
+                as="p"
+                marginTop="2"
+                color={useColorModeValue('gray.700', 'gray.200')}
+                fontSize="lg">
+                May 2020 - August 2020
+                </Text>
             </Heading>
             <BlogTags tags={['Engineering', 'Product', 'Fellowship']} />
             <Text
@@ -258,7 +272,15 @@ const ArticleList = () => {
                         Northrop Grumman
                     </NextLink>
                 </Link>
+                <Text
+                as="p"
+                marginTop="2"
+                color={useColorModeValue('gray.700', 'gray.200')}
+                fontSize="lg">
+                May 2019 - August 2019
+                </Text>
             </Heading>
+         
             <BlogTags tags={['Engineering', 'Python', 'Internship']} />
             <Text
                 as="p"
