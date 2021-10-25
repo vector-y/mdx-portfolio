@@ -7,7 +7,7 @@ import {
   Text,
   useBreakpointValue,
   ListItem,
-  UnorderedList, 
+  UnorderedList,
 } from '@chakra-ui/react';
 import NextLink from 'next/link'
 
@@ -32,7 +32,7 @@ export default function SplitScreen() {
                 bg: 'red.400',
                 zIndex: -1,
               }}>
-              Victor is a <Text color={'red.400'} as={'span'}>UX Engineer</Text>{' '} based in <Text color={'red.400'} as={'span'}>OC</Text>{' '}
+              Victor is a <Text color={"#4285F4"} as={'span'}>UX Designer</Text>{' '} based in <Text color={"#4285F4"} as={'span'}>OC</Text>{' '}
             </Text>
             <br />{' '}
           </Heading>
@@ -40,17 +40,17 @@ export default function SplitScreen() {
             fontSize={{ base: 'md', lg: 'lg' }}
           >
             <ListItem>Studying Computer Science @ Long Beach State</ListItem>
-            <ListItem>Previously @ <a style={{color: "#F56565", textDecoration: 'none'}} href={ngURL}>Northrop Grumman</a> <br/></ListItem>
-            <ListItem>Previously @ <a style={{color: "#F56565", textDecoration: 'none'}} href={spaceURL}>urspace Labs</a> <br/></ListItem>
+            <ListItem>Previously @ <a target="_blank" rel="noopener noreferrer" style={{ color: "#4285F4", textDecoration: 'none' }} href={ngURL}>Northrop Grumman</a> <br /></ListItem>
+            <ListItem>Previously @ <a target="_blank" rel="noopener noreferrer" style={{ color: "#4285F4", textDecoration: 'none' }} href={spaceURL}>urspace Labs</a> <br /></ListItem>
           </UnorderedList>
           <Stack direction={{ base: 'column', md: 'row' }} spacing={5}>
             <NextLink href="/about" passHref>
               <Button
                 rounded={'full'}
-                bg={'red.400'}
+                bg={"#4285F4"}
                 color={'white'}
                 _hover={{
-                  bg: 'red.500',
+                  bg: 'blue.500',
                 }}>
                 About Victor
               </Button>
@@ -64,8 +64,9 @@ export default function SplitScreen() {
       <Flex p={1} flex={1} align={'center'} justify={'center'}>
         <Image
           alt={'Victor Profile Image'}
-          height= {'30em'}
+          height={'30em'}
           objectFit={'cover'}
+          borderRadius={'25px'}
           src={
             '/butterfly.jpg'
           }

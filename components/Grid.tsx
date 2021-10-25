@@ -37,7 +37,7 @@ export default function SimpleThreeColumns() {
           mt={5}
           mb={5}
         >
-            Currently <Text color={'red.400'} as={'span'}>Learning</Text>{' '}
+            Currently <Text color={"#4285F4"} as={'span'}>Learning</Text>{' '}
         </Text>
       </Heading>
       <SimpleGrid alignItems={"center"} columns={{ base: 1, md: 3 }} spacing={10}>

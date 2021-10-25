@@ -3,9 +3,12 @@ import {
     useColorMode,
     Button,
     Flex,
-    Box
+    Box,
+    Image,
+    Avatar,
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
+import Link from 'next/link'
 import styled from '@emotion/styled'
 
 import DarkModeSwitch from '../components/DarkModeSwitch'
@@ -53,6 +56,7 @@ const Container = ({ children }) => {
                 mb={[0, 0, 8]}
                 mx="auto"
             >
+
                 <Box>
                     <NextLink href="/" passHref>
                         <Button as="a" variant="ghost" p={[1, 2, 4]}>
@@ -69,6 +73,11 @@ const Container = ({ children }) => {
                             Portfolio
                         </Button>
                     </NextLink>
+                    <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1b1wKUZjnRn0W5TBIYi6vpXiYWO8COyoI/view?usp=sharing" passHref>
+                        <Button as="a" variant="ghost" p={[1, 2, 4]}>
+                            Resume
+                        </Button>
+                    </a>
                 </Box>
                 <DarkModeSwitch />
             </StickyNav >

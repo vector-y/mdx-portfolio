@@ -20,7 +20,7 @@ import {
     return (
       <Stack minH={'50vh'} direction={{ base: 'column', md: 'row' }}>
         <Flex p={12} flex={1} justify={'center'}>
-          <Stack spacing={5} w={'full'} maxW={'5xl'}>
+          <Stack spacing={2} w={'full'} maxW={'5xl'}>
             <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
               <Text
                 as={'span'}
@@ -35,13 +35,13 @@ import {
                   bg: 'red.400',
                   zIndex: -1,
                 }}>
-                <Text color={'red.400'} as={'span'} >About Me</Text>{' '}
+                <Text color={"#4285F4"} as={'span'} >About Me</Text>{' '}
               </Text>
               <br />{' '}
             </Heading>
             
             <Text fontSize={{ base: '2xl', md: '2xl', lg: '2xl' }}>
-                Hi there! <br/> I'm Victor, a UX Engineer based in Orange County. <br/> I'm learning about how I can design to improve quality of life for all people to live life to the fullest :)  
+                Hi there!  
             </Text>
 
             <p>
@@ -61,6 +61,7 @@ import {
                     alt={'Victor Profile Image'}
                     height= {'25em'}
                     objectFit={'cover'}
+                    borderRadius={'25px'}
                     src={
                       '/butterfly.jpg'
                     }
@@ -68,7 +69,7 @@ import {
               </Stack>
               <Stack direction={{ base: 'column', md: 'row'}} spacing={5}>
                 <Heading as="h1" textAlign={"center"}>Listening To:</Heading>
-                  <p align="center">
+                  <p align="center"> 
                     <iframe src="https://open.spotify.com/embed/playlist/7xez5ktOS8kgr2PJwMBM8L" align= "center" position="center" width="300" height="400" frameborder="0" allowtransparency="true" allow="encrypted-media" />
                   </p>
               </Stack>
@@ -85,10 +86,10 @@ import {
                     position: 'absolute',
                     bottom: 1,
                     left: 0,
-                    bg: 'red.400',
+                    bg: "#4285F4",
                     zIndex: -1,
                     }}>
-                    <Text color={'red.400'} as={'span'}>Contact</Text>{' '}
+                    <Text color={"#4285F4"} as={'span'}>Contact</Text>{' '}
                 </Text>
                 <br />{' '}
                 </Heading>
@@ -96,9 +97,9 @@ import {
             <UnorderedList
                 fontSize={{ base: 'md', lg: 'lg' }}
             > 
-                <ListItem>DM me on <a style={{color: "#F56565", textDecoration: 'none'}} href={twitterURL}>Twitter</a> <br/></ListItem>
-                <ListItem>Connect with me on <a style={{color: "#F56565", textDecoration: 'none'}} href={linkedURL}>LinkedIn</a> <br/></ListItem>
-                <ListItem>Reach out: <a style={{color: "#F56565", textDecoration: 'none'}}>vt.victortran@gmail.com</a></ListItem>
+                <ListItem>DM me on <a style={{color: "#4285F4", textDecoration: 'none'}} href={twitterURL}>Twitter</a> <br/></ListItem>
+                <ListItem>Connect with me on <a style={{color: "#4285F4", textDecoration: 'none'}} href={linkedURL}>LinkedIn</a> <br/></ListItem>
+                <ListItem>Reach out: <a style={{color: "#4285F4", textDecoration: 'none'}}>vt.victortran@gmail.com</a></ListItem>
             </UnorderedList>
           </Stack>
         

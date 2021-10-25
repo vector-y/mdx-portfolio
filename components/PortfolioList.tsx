@@ -29,7 +29,7 @@ const BlogTags: React.FC<IBlogTags> = (props) => {
     <HStack spacing={2} marginTop={props.marginTop}>
       {props.tags.map((tag) => {
         return (
-          <Tag size={'md'} variant="solid" colorScheme="red" key={tag}>
+          <Tag size={'md'} variant="solid" colorScheme="blue" key={tag}>
             {tag}
           </Tag>
         );
@@ -69,7 +69,7 @@ const ArticleList = () => {
                 mb={5}
                 textAlign={"center"}
                 >
-                    Work Experience
+                    Featured Work
                 </Text>
             </Heading>
         <Box
