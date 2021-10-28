@@ -12,7 +12,7 @@ const BlogPost = ({ title, publishedAt, summary, slug }) => {
 
 
     return (
-        <NextLink href={`portfolio/${slug}`} passHref>
+        <NextLink href={`portfolio/${slug}`} passhref>
             <Link w="100%" _hover={{ textDecoration: 'none' }}>
                 <Box 
                 maxW={'445px'}
