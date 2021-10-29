@@ -58,26 +58,26 @@ const Container = ({ children }) => {
             >
 
                 <Box>
-                    <NextLink href="/" passhref>
+                    <NextLink href="/" passHref>
                         <Button as="a" variant="ghost" p={[1, 2, 4]}>
                             Home
                         </Button>
                     </NextLink>
-                    <NextLink href="/about" passhref>
+                    <NextLink href="/about" passHref>
                         <Button as="a" variant="ghost" p={[1, 2, 4]}>
                             About
                         </Button>
                     </NextLink>
-                    <NextLink href="/portfolio" passhref>
+                    <NextLink href="/portfolio" passHref>
                         <Button as="a" variant="ghost" p={[1, 2, 4]}>
                             Portfolio
                         </Button>
                     </NextLink>
-                    <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1b1wKUZjnRn0W5TBIYi6vpXiYWO8COyoI/view?usp=sharing" passHref>
-                        <Button as="a" variant="ghost" p={[1, 2, 4]}>
+                    <NextLink href="https://drive.google.com/file/d/1b1wKUZjnRn0W5TBIYi6vpXiYWO8COyoI/view?usp=sharing" passHref>
+                        <Button target="_blank" rel="noopener noreferrer" as="a" variant="ghost" p={[1, 2, 4]}>
                             Resume
                         </Button>
-                    </a>
+                    </NextLink>
                 </Box>
                 <DarkModeSwitch />
             </StickyNav >
