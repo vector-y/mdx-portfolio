@@ -63,7 +63,7 @@ import {
                     objectFit={'cover'}
                     borderRadius={'25px'}
                     src={
-                      '/butterfly.jpg'
+                      '/khoai.jpg'
                     }
                   />
               </Stack>
