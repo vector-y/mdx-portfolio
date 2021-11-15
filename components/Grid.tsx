@@ -45,7 +45,7 @@ export default function SimpleThreeColumns() {
           icon={<Icon as={FcCommandLine} w={10} h={10} />}
           title={'node.js'}
           text={
-            'Learning more about next.js, chakra-ui, and markdown! Always open to chat more about web development :)'
+            'Learning more about next.js, planet scale, and prisma! Always open to chat more about web development & product design :)'
           }
         />
         <Feature
@@ -59,7 +59,7 @@ export default function SimpleThreeColumns() {
           icon={<Icon as={FcLike} w={10} h={10} />}
           title={'UI/UX Design'}
           text={
-            'Learning UI/UX Design Specialization by Cal Arts, currently on Visual Elements of User Interface Design <3'
+            'Learning UI/UX Design Specialization by Cal Arts - Also taking DesignLab UX Academy Foundations under mentorship from a Lead UX Designer @ Rite Aid'
           }
         />
       </SimpleGrid>
