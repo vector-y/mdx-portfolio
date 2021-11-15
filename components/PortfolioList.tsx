@@ -131,7 +131,7 @@ const ArticleList = () => {
                 marginTop="2"
                 color={useColorModeValue('gray.700', 'gray.200')}
                 fontSize="lg">
-                September 2021 - November 2021
+                August 2021 - November 2021
                 </Text>
             </Heading>
             <BlogTags tags={['Environment', 'Community', 'Cal Arts']} />
