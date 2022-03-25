@@ -4,28 +4,56 @@ publishedAt: "2020-08-15"
 summary: "Say goodbye to spreadsheets and visualize your organization’s finances all in one place."
 ---
 
+| Role        | Timeline    | Skills           | Tools         |
+| :---        |    :----:   |    :----:        |    ----:      |
+| Engineer    | 2020        | Visual Design    | Visual Studio Code   |
+|             |             | Engineering      | Javascript    |
+|             |             | Product Thinking | Figma         |
+
 Urspace Labs is a 10-week fellowship program I entered in the Summer of 2020. The program was for students who did not have an internship or job lined up that summer.
 Like a cross between a bootcamp and an accelerator, I was coached by the program directors through the basics of product development—from ideation to research to design to development.
 
-|`            Role              `|`       Value       `|`       Skills       `|`       Tools       `|
-|:-----------|:---------|:---------|:---------|
-|Engineering Fellow  |Summer 2020|Product Thinking|Visual Studio Code|
-|                    |             |  Visual Design   |         Javascript  |
-|                    |             |   Engineering    |              Figma  |
+[Lofi, High Fi Mockups](https://www.figma.com/file/TalWOzSfKgpZnC0E9Cm6sN/Coingo?node-id=175%3A363)
 
+[Presentation Deck](https://www.figma.com/file/lcFm0PxRnspf4hTAZ7Icbm/Demo-Presentation?node-id=0%3A1)
 
+I used [divjoy](https://divjoy.com/) to help generate the integrated react code base with another fellow engineer.
 
-| Role               |  Timeline   |      Skills      |              Tools  |
-| :----------------------- | :--------- | :-------------- | :----------------- |
-| Engineering Fellow | Summer 2020 | Product thinking | Visual Studio Code  |
-|                    |             |  Visual Design   |         javascript  |
-|                    |             |   Engineering    |              Figma  |
-    
+I worked on customizing basic react components for data visualization. Here's an example of the code snippet!
 
-```javascript:hello.js
-const hello = 'Hello, world!'
-var x = 6
+The rest of the code base: [Coingo's Github](https://github.com/cv-es/coingo)
 
-if (x > 5)
-    console.log(hello)
+```javascript:Chart.js
+import React, { Component } from "react";
+import { Bar, Line, Pie } from "react-chartjs-2";
+
+class Chart extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      chartData: {
+        labels: ["Victor", "Sofia", "Emily", "Charlotte"],
+        datasets: [
+          {
+            label: "Members",
+            data: [100, 200, 300, 400],
+            backgroundColor: "rgba(255, 0, 255, 0.75)",
+          },
+        ],
+      },
+    };
+  }
+  render() {
+    return (
+      <div className="chart">
+        <Line
+          data={this.state.chartData}
+          options={{ maintainAspectRatio: false }}
+        />
+      </div>
+    );
+  }
+}
+
+export default Chart;
 ```
