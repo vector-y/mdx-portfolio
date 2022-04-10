@@ -41,7 +41,7 @@ const Container = ({ children }) => {
 
     return (
         <>
-            <StickyNav
+            {/* <StickyNav
                 flexDirection="row"
                 justifyContent="space-between"
                 alignItems="center"
@@ -80,7 +80,25 @@ const Container = ({ children }) => {
                     </NextLink>
                 </Box>
                 <DarkModeSwitch />
-            </StickyNav >
+            </StickyNav > */}
+            <StickyNav
+                flexDirection="row"
+                justifyContent="space-between"
+                alignItems="center"
+                maxWidth="800px"
+                minWidth="356px"
+                width="100%"
+                bg={bgColor[colorMode]}
+                as="nav"
+                px={[2, 6, 6]}
+                py={2}
+                mt={8}
+                mb={[0, 0, 8]}
+                mx="auto"
+            >
+                <DarkModeSwitch />
+            </StickyNav>
+            {/* <DarkModeSwitch /> */}
             <Flex
                 as="main"
                 justifyContent="center"
